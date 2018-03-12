@@ -215,3 +215,26 @@ input[type=submit] {
   background: #4aaaa5;
   border: 0 none;
 }
+
+
+/* landscape phone */
+@media only screen and (max-width: 980px) {
+  * {background-color: red;}
+  } 
+
+
+/* tablets */
+@media only screen and (max-width: 768px) {
+  * {background-color: pink;}
+  } 
+
+
+/*no content cut off  */ 
+@media only screen and (max-width: 640px) {
+* {background-color: blue;}
+} 
+
+
+
+
+
