@@ -126,13 +126,28 @@ h3, h2 {
 
 .main-section {
   float: left;
-  width: 100%;
+  width: 70%;
   max-width: 960px;
   padding: 30px;
   margin: 0 0 40px;
   background: #fff;
   border: 1px solid #ddd;
 }
+
+
+
+.social {
+  padding: 4px;
+ 
+}
+
+.sidebar {
+  float: left;
+width: 27%;
+border: 1px solid #ddd;
+background: #fff;
+padding: 30px;
+margin: 0 0 0 20px;}
 
 /* portfolio page */
 
@@ -217,21 +232,101 @@ input[type=submit] {
 }
 
 
-/* landscape phone */
+
 @media only screen and (max-width: 980px) {
-  * {background-color: red;}
-  } 
+  
+  /* Contact: connect with me sidebar icons all still in a row */  
+  #connect {
+   width: 100%;
+ }
+
+ .main-section{
+   width: 63%;
+ }
+
+ .sidebar {
+   width: 32%;
+ }
+
+/* About me: picture is wider, but sidebar is still to the side */
+.auth-image{
+  width: 100%;
+  margin: 0 0 20px 0;
+}
+
+  /* Portfolio: one work per row, sidebar still to the side */
+  .work {
+    width: 100%;
+  }
+} 
 
 
 /* tablets */
 @media only screen and (max-width: 768px) {
-  * {background-color: pink;}
-  } 
+ 
+  /* side bar at the bottom for each */
+ .sidebar {
+    width: 100%;
+  }
+  .main-section {
+    width: 100%;
+  }
+
+  /* About me: picture looks to be about 50%, sidebar to the bottom */
+  .auth-image {
+    width: 50%;
+    margin: 0 20px 0 0;
+  }
+
+  /* Portfolio: back to two items per row */
+  .work {
+  width: 45%;
+  }
+} 
 
 
-/*no content cut off  */ 
+/* landscape phone */
 @media only screen and (max-width: 640px) {
-* {background-color: blue;}
+
+
+/* step 7, header is static when screen is smallest*/
+#masthead {
+  position: static;
+  padding: 0px;
+  margin: 0 0 0 0;
+}
+
+#main-container {
+  padding-top: 30px;
+}
+
+/*header is two rows now*/
+#logo {
+  width: 100%;
+  
+}
+
+.container {
+  margin-top: 0px;
+}
+
+nav {
+  width: 100%;
+  text-align: center;
+
+}
+
+/* About me: image back to full width, sidebar still at bottom */
+.auth-image {
+  width: 100%;
+}
+
+/*Portfolio: one work per row*/
+.work {
+  width: 100%;
+}
+
+
 } 
 
 
